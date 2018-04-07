@@ -1,0 +1,35 @@
+{
+    "background": {
+      "scripts": ["jquery.js", "my-background.js"],
+      "page": "my-background.html"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.facebook.com/*"],
+        "js": ["borderify.js"],
+        "css": ["main.css"]
+      }
+    ],
+  
+    "default_locale": "en",
+  
+    "description": "This extension guides and facilitates exporting your data for Robinbook, ",
+  
+    "manifest_version": 2,
+  
+    "name": "Robinbook Setup",
+  
+    "page_action": {
+      "default_icon": {
+        "19": "button/geo-19.png",
+        "38": "button/geo-38.png"
+      },
+      "default_title": "Whereami?",
+      "default_popup": "popup/geo.html"
+    },
+  
+    "permissions": ["webNavigation"],
+  
+    "version": "0.1"
+  }
