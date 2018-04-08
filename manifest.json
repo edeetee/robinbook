@@ -7,7 +7,7 @@
 
   "version": "0.1",
 
-  "permissions": ["activeTab", "storage"],
+  "permissions": ["*://*.facebook.com/*", "storage", "downloads"],
 
   "content_security_policy": "default-src 'self'",
 

@@ -1,9 +1,10 @@
 const $ = require('jquery');
 
-$("#start").click(() => {
-    browser.tabs.create({
+$("#start").click(async () => {
+    await browser.tabs.create({
         url: "https://www.facebook.com/me/friends"
-    }).executeScript({
+    })
+    browser.tabs.executeScript({
         file: "output/friends.js"
     })
 })
