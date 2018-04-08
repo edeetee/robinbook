@@ -1,6 +1,13 @@
+const path = require('path');
+
 module.exports = {
-  entry: './src.js',
+  entry: {
+    friends: "./friends.js",
+    popup: "./popup.js"
+  },
   output: {
-    filename: 'bundle.js'
-  }
+    path: path.resolve(__dirname, "output"),
+    filename: "[name].js"
+  },
+  devtool: 'inline-source-map',
 };
