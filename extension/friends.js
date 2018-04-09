@@ -18,6 +18,8 @@ class Friend{
     }
 }
 
+$(document.body).append(`<span class="information">We are scrolling through your facebook list then exporting the list of names and usernames to a csv spreadsheet</span>`)
+
 function scrollUpdate() {
     let bot = friendsPanel.position().top + friendsPanel.outerHeight(true);
 
@@ -41,22 +43,25 @@ function scrollUpdate() {
             
             friends.push(new Friend(user, name))
         })
+
+        //make csv blob
         let prefix = "data:text/csv;charset=utf-8,"
         let csv = prefix + friends.map(val => `"${val.name}","${val.user}"`).join('\r\n');
-        console.log(csv)
-        window.open(encodeURI(csv))
-        // let blob = new Blob(csv, {type: 'text/csv'})
-        // let csvUrl = URL.createObjectURL(blob)
-        browser.downloads.download({
-            filename: "friends.csv",
-            url: encodeURI(csv)
-        })
+        let encoded = encodeURI(csv)
+        
+        //download blob
+        let link = document.createElement("a");
+        link.setAttribute("href", encoded);
+        link.setAttribute("download", "friends.csv");
+        document.body.appendChild(link); // Required for FF
+        link.click();
+        link.remove();
     }
 }
 scrollUpdate();
 
 function find(){
-    $(".fsl.fwb.fcb:not(.found)").each((i, el) => {
+    $(".fsl.fwb.fcb").each((i, el) => {
         let item = el.children[0];
         $(item).addClass('.found')
         let url = item.getAttribute('href')
