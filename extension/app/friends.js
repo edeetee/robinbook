@@ -1,4 +1,6 @@
-const $ = require('jquery');
+import $ from 'jquery/dist/jquery.slim'
+import {setOne, getOne} from './lib/storage'
+import Friend from './lib/friend'
 
 /** @type Friend[] */
 const friends = []
@@ -8,17 +10,19 @@ let lastY = 0;
 
 let friendsPanel = $("#pagelet_timeline_medley_friends")
 
-class Friend{
-    /** @param {string} user 
-     *  @param {string} name
-    */
-    constructor(user, name){
-        this.name = name;
-        this.user = user;
-    }
-}
+const html = `<div class="robinbook-information">
+<h1>Your friends.csv has not been loaded on this computer. Either:</h1>
+We are scrolling through your facebook list then exporting the list of names and usernames to a csv spreadsheet
+</div>`;
 
-$(document.body).append(`<span class="information">We are scrolling through your facebook list then exporting the list of names and usernames to a csv spreadsheet</span>`)
+
+
+if(0 < friendsPanel.length && getOne("friends"))
+    getOne("friends").then(() => {
+        $(document.body).append(html)
+       
+        scrollUpdate();
+    })
 
 function scrollUpdate() {
     let bot = friendsPanel.position().top + friendsPanel.outerHeight(true);
@@ -44,6 +48,8 @@ function scrollUpdate() {
             friends.push(new Friend(user, name))
         })
 
+        setOne('friends', friends)
+
         //make csv blob
         let prefix = "data:text/csv;charset=utf-8,"
         let csv = prefix + friends.map(val => `"${val.name}","${val.user}"`).join('\r\n');
@@ -58,7 +64,6 @@ function scrollUpdate() {
         link.remove();
     }
 }
-scrollUpdate();
 
 function find(){
     $(".fsl.fwb.fcb").each((i, el) => {

@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --watch --mode=development"
+    "c": "webextension-toolbox dev chrome",
+    "ff": "webextension-toolbox dev firefox",
+    "web-ext": "cd dist/firefox && web-ext run"
   },
   "author": "",
   "license": "ISC",
@@ -14,7 +16,6 @@
     "webpack": "^4.5.0"
   },
   "devDependencies": {
-    "web-ext": "^2.6.0",
-    "webpack-cli": "^2.0.14"
+    "webextension-toolbox": "^1.0.3"
   }
 }

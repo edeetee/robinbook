@@ -7,6 +7,19 @@
 
   "version": "0.1",
 
+  "content_scripts": [
+    {
+      "matches": ["file:///*/index.htm"],
+      "js": ["archive.js"],
+      "css": ["main.css"]
+    },
+    {
+      "matches": ["file:///*.facebook.com/*/friends*"],
+      "js": ["friends.js"],
+      "css": ["main.css"]
+    }
+  ],
+
   "permissions": ["*://*.facebook.com/*", "storage", "downloads"],
 
   "content_security_policy": "default-src 'self'",
