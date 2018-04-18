@@ -1,4 +1,4 @@
-import $ from 'jquery/dist/jquery.slim'
+import $ from 'jquery'
 import {setOne, getOne} from './lib/storage'
 import Friend from './lib/friend'
 
@@ -11,18 +11,22 @@ let lastY = 0;
 let friendsPanel = $("#pagelet_timeline_medley_friends")
 
 const html = `<div class="robinbook-information">
-<h1>Your friends.csv has not been loaded on this computer. Either:</h1>
-We are scrolling through your facebook list then exporting the list of names and usernames to a csv spreadsheet
+<h1>Robinbook</h1>
+<p>
+We are currently generating your metadata.<br>
+This data will be stored in your local browser storage and downloaded as a comma separated spreadsheet.<br>
+You may continue with the transfer process once your friends.csv has been generated.<br>
+</p>
 </div>`;
+let htmlElm = null;
 
-
-
-if(0 < friendsPanel.length && getOne("friends"))
-    getOne("friends").then(() => {
-        $(document.body).append(html)
-       
+(async () => {
+    if(0 < friendsPanel.length && ! await getOne("friends")){
+        console.log('testsss')
+        htmlElm = $(document.body).append(html)
         scrollUpdate();
-    })
+    }
+})();
 
 function scrollUpdate() {
     let bot = friendsPanel.position().top + friendsPanel.outerHeight(true);
@@ -48,6 +52,15 @@ function scrollUpdate() {
             friends.push(new Friend(user, name))
         })
 
+        friends.sort((a,b) => {
+            if(a.name < b.name)
+                return -1;
+            else if(b.name < a.name)
+                return 1;
+            else
+                return 0;
+        })
+
         setOne('friends', friends)
 
         //make csv blob
@@ -62,6 +75,8 @@ function scrollUpdate() {
         document.body.appendChild(link); // Required for FF
         link.click();
         link.remove();
+
+        htmlElm.remove();
     }
 }
 

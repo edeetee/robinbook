@@ -7,20 +7,35 @@
 
   "version": "0.1",
 
+  "applications": {
+    "gecko": {
+      "id": "robinbook@edeetee.nz"
+    }
+  },
+
   "content_scripts": [
     {
-      "matches": ["file:///*/index.htm"],
+      "matches": ["file:///*/index.htm", "file:///*/html/friends.htm"],
       "js": ["archive.js"],
       "css": ["main.css"]
     },
     {
-      "matches": ["file:///*.facebook.com/*/friends*"],
+      "matches": ["*://*.facebook.com/*/friends*"],
       "js": ["friends.js"],
+      "css": ["main.css"]
+    },
+    {
+      "matches": ["*://*.facebook.com/settings"],
+      "js": ["settings.js"]
+    },
+    {
+      "matches": ["*://*.facebook.com/dyi*"],
+      "js": ["archiveHelper.js"],
       "css": ["main.css"]
     }
   ],
 
-  "permissions": ["*://*.facebook.com/*", "storage", "downloads"],
+  "permissions": ["storage", "activeTab", "tabs"],
 
   "content_security_policy": "default-src 'self'",
 

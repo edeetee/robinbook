@@ -14,15 +14,15 @@ export default class Index extends Component{
         display: 'flex', 
         flexDirection: 'column',
         alignItems: 'start',
-        margin: '50px 30px',
-        maxWidth: 1000
+        margin: '50px 40px',
+        maxWidth: 900
       }}>
         <style jsx>{`
           span {
             font-weight: bold;
             background-color: black;
             color: white;
-            padding: 2px;
+            padding: 0.15em;
           }
 
           ol {
@@ -49,11 +49,7 @@ export default class Index extends Component{
           }
 
           p{
-            margin: 10px 0;
-          }
-
-          i{
-            font-size: 110%;
+            margin: 10px 10px;
           }
 
           ul {
@@ -63,12 +59,14 @@ export default class Index extends Component{
 
           ul > li{
             margin-top: 10px;
+            margin-left: 30px;
             list-style-type: none;
           }
           
         `}</style>
         <span style={{fontSize: 90}}>Robinbook</span>
-        <span style={{fontSize: 40, marginBottom: 20}}>Take back <i>your</i> data</span>
+        <span style={{fontSize: 40, marginBottom: 30}}>Take back <i>your</i> data</span>
+        <div style={{height:50}}></div>
         <p>
           On facebook, your data is their profit. You have no control over what happens to that data and, 
           if <a href="https://en.wikipedia.org/wiki/Cambridge_Analytica">what we know so far</a> is any indication, 
@@ -76,7 +74,12 @@ export default class Index extends Component{
         </p>
         <p>
           Robinbook will walk you through downloading the data facebook will let you download (your facebook archive)
-          and will also allow you to download your valuable data facebook wants to keep behind it's walled garden.
+          and will also allow you to download your valuable metadata facebook wants to keep behind it's walled garden.
+        </p>
+        <p>
+          Using this data, you can retain the information that you have put into facebook.
+          If we give people ownership of their data, it allows them to choose who to trust with it.
+          Then, we have the power to pick platforms that respect our values both through their actions and implementations.
         </p>
         <ol>
           <li>Download your facebook archive and metadata using Robinbook</li>
