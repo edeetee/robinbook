@@ -1,0 +1,2 @@
+[alias]
+	ghpages = subtree push --prefix site/out/ origin gh-pages
