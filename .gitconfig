@@ -1,2 +1,0 @@
-[alias]
-	deploy = git push origin `git subtree split --prefix site/out/ master`:gh-pages --force
