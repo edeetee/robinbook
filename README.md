@@ -1,2 +1,2 @@
 # Robinbook
-For more information, go to the site, edeetee.github.com/robinbook.
+For more information, go to [the robinbook homepage](http://edeetee.github.com/robinbook).
