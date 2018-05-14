@@ -1,2 +1,2 @@
 [alias]
-	ghpages = subtree push --prefix site/out/ origin gh-pages
+	ghpages = git push origin `git subtree-split-prefix site/out/ gh-pages`:gh-pages -force
