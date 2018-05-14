@@ -129,14 +129,27 @@ var Index = function (_Component) {
             {
               className: 'jsx-1155966384'
             },
-            'Download your facebook archive and metadata using Robinbook'
+            'Download your facebook archive and metadata using ',
+            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+              'a',
+              { href: 'https://addons.mozilla.org/en-US/firefox/addon/robinbook-setup/', className: 'jsx-1155966384'
+              },
+              'the Robinbook extension'
+            )
           ),
           __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             'li',
             {
               className: 'jsx-1155966384'
             },
-            'Browse your backed up data using Robinbook to compile the data together'
+            'Browse your backed up data using ',
+            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+              'a',
+              { href: 'https://addons.mozilla.org/en-US/firefox/addon/robinbook-setup/', className: 'jsx-1155966384'
+              },
+              'the Robinbook extension'
+            ),
+            ' to compile the data together'
           ),
           __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             'li',
@@ -203,6 +216,66 @@ var Index = function (_Component) {
           {
             className: 'jsx-1155966384'
           },
+          'Restrict facebook\'s data access'
+        ),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'h3',
+          {
+            className: 'jsx-1155966384'
+          },
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+            'a',
+            { href: 'https://addons.mozilla.org/en-US/firefox/addon/facebook-container/?src=search', className: 'jsx-1155966384'
+            },
+            'Facebook Container'
+          ),
+          ' - Stop facebook global tracking'
+        ),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'h3',
+          {
+            className: 'jsx-1155966384'
+          },
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+            'a',
+            { href: 'https://www.facebook.com/me?viewas=100000686899395&privacy_source=timeline_gear_menu#_', className: 'jsx-1155966384'
+            },
+            'View Profile As'
+          ),
+          ' - See how your profile looks to others'
+        ),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'h3',
+          {
+            className: 'jsx-1155966384'
+          },
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+            'a',
+            { href: 'https://chrome.google.com/webstore/detail/social-book-post-manager/ljfidlkcmdmmibngdfikhffffdmphjae', className: 'jsx-1155966384'
+            },
+            'Social Book Post Manager'
+          ),
+          ' - auto clear old data'
+        ),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'h3',
+          {
+            className: 'jsx-1155966384'
+          },
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+            'a',
+            { href: 'https://www.facebook.com/help/delete_account/', className: 'jsx-1155966384'
+            },
+            'Delete your facebook account'
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('div', { style: { height: 30 }, className: 'jsx-1155966384'
+        }),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'h2',
+          {
+            className: 'jsx-1155966384'
+          },
           'Use a social network that uses independent servers'
         ),
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
@@ -213,28 +286,30 @@ var Index = function (_Component) {
           'These systems allow users to host their own servers and identities, so that you have full control over your data as it can be restricted to your machine.'
         ),
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-          'a',
-          { href: 'https://mastodon.social', className: 'jsx-1155966384'
+          'h3',
+          {
+            className: 'jsx-1155966384'
           },
           __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-            'h3',
-            {
-              className: 'jsx-1155966384'
+            'a',
+            { href: 'https://mastodon.social', className: 'jsx-1155966384'
             },
-            'Mastodon - Twitter Clone'
-          )
+            'Mastodon'
+          ),
+          ' - Twitter Clone'
         ),
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-          'a',
-          { href: 'https://diasporafoundation.org/', className: 'jsx-1155966384'
+          'h3',
+          {
+            className: 'jsx-1155966384'
           },
           __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-            'h3',
-            {
-              className: 'jsx-1155966384'
+            'a',
+            { href: 'https://diasporafoundation.org/', className: 'jsx-1155966384'
             },
-            'Diasporia* - Facebook Clone'
-          )
+            'Diasporia*'
+          ),
+          ' - Facebook Clone'
         ),
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('div', { style: { height: 30 }, className: 'jsx-1155966384'
         }),
@@ -253,16 +328,17 @@ var Index = function (_Component) {
           'These are full ecosystems allowing current browsers to connect to decentralized networks.'
         ),
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-          'a',
-          { href: 'https://blockstack.org/', className: 'jsx-1155966384'
+          'h3',
+          {
+            className: 'jsx-1155966384'
           },
           __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-            'h3',
-            {
-              className: 'jsx-1155966384'
+            'a',
+            { href: 'https://blockstack.org/', className: 'jsx-1155966384'
             },
-            'Blockstack - personally controlled data storage and identity'
-          )
+            'Blockstack'
+          ),
+          ' - personally controlled data storage and identity'
         ),
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('div', { style: { height: 30 }, className: 'jsx-1155966384'
         }),
