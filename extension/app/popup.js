@@ -1,4 +1,3 @@
-import $ from 'jquery'
 import {getOne, setOne} from './lib/storage'
 
 // setOne("friends", null)
@@ -44,11 +43,5 @@ function loginListener(tabID, info, tab) {
 async function getArchive() {
     await browser.tabs.create({
         url: "https://www.facebook.com/settings?tab=your_facebook_information"
-    })
-    browser.tabs.insertCSS({
-        file: "main.css"
-    })
-    await browser.tabs.executeScript({
-        file: "getArchive.js"
     })
 }

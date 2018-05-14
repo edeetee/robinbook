@@ -5,26 +5,28 @@
 
   "manifest_version": 2,
 
-  "version": "0.1",
+  "version": "0.2",
 
   "content_scripts": [
     {
-      "matches": ["file:///*/index.htm", "file:///*/html/friends.htm"],
-      "js": ["archive.js"],
+      "matches": ["file:///*"],
+      "js": ["vendor.chunk.js", "archive.js"],
       "css": ["main.css"]
     },
+
     {
       "matches": ["*://*.facebook.com/*/friends*"],
-      "js": ["friends.js"],
+      "js": ["vendor.chunk.js", "friends.js"],
       "css": ["main.css"]
     },
+
     {
-      "matches": ["*://*.facebook.com/settings"],
-      "js": ["settings.js"]
+      "matches": ["*://*.facebook.com/settings?tab=your_facebook_information"],
+      "js": ["vendor.chunk.js", "openDyi.js"]
     },
     {
       "matches": ["*://*.facebook.com/dyi*"],
-      "js": ["archiveHelper.js"],
+      "js": ["vendor.chunk.js", "archiveHelper.js"],
       "css": ["main.css"]
     }
   ],

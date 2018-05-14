@@ -1,4 +1,5 @@
 .robinbook-information {
+    all: unset;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
     max-width: 600px;

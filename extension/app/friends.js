@@ -1,4 +1,3 @@
-import $ from 'jquery'
 import {setOne, getOne} from './lib/storage'
 import Friend from './lib/friend'
 

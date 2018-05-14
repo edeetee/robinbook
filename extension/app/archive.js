@@ -1,5 +1,4 @@
 import {getOne} from './lib/storage'
-import $ from 'jquery'
 import Friend from './lib/friend'
 
 const html = `<div class="robinbook-information">
@@ -26,8 +25,9 @@ async function applyFriends(){
             browser.browserAction.openPopup()
         })
     } else{
-        $("li").each((i, el) => {
-            let friend = binarySearch(friends, el.textContent)
+        $("div").each((i, el) => {
+            console.log(el.nodeValue)
+            let friend = binarySearch(friends, el.innerText)
             if(friend != null){
                 console.log(friend.user)
                 $(el).wrap(`<a href=https://www.facebook.com/${friend.user}></a>`)

@@ -1,7 +1,3 @@
-import $ from 'jquery'
-
-console.log($(document.body))
-
 const html = `<div class="robinbook-information">
 <h1>Robinbook</h1>
 <p>
@@ -12,3 +8,10 @@ press Create File and wait for download to complete.<br>
 </div>`;
 
 $(document.body).append(html)
+
+setInterval(() => {
+	if(document && document.location && document.location.href && !document.location.href.startsWith("https://www.facebook.com/dyi")){
+		console.log(document.location.href)
+		$(".robinbook-information").remove()
+	}
+}, 1000)
