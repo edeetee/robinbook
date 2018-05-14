@@ -1,5 +1,3 @@
-const Uglify = 
-
 module.exports = {
     exportPathMap: function () {
         return {
@@ -11,8 +9,6 @@ module.exports = {
         cfg.plugins = cfg.plugins.filter(plugin => 
             plugin.constructor.name !== 'UglifyJsPlugin'
         );
-
-        // cfg.push(new)
 
         return cfg
     }
