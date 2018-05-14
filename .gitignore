@@ -60,5 +60,10 @@ typings/
 # next.js build output
 .next
 
+#
+*/.DS_Store
+
 extension/dist/
 extension/packages/
+
+site/out

@@ -43,7 +43,7 @@ function loginListener(tabID, info, tab) {
 
 async function getArchive() {
     await browser.tabs.create({
-        url: "https://www.facebook.com/settings"
+        url: "https://www.facebook.com/settings?tab=your_facebook_information"
     })
     browser.tabs.insertCSS({
         file: "main.css"

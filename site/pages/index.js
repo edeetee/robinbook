@@ -8,6 +8,10 @@ export default class Index extends Component{
     }
   }
 
+  componentDidMount(){
+    document.title = "Robinbook"
+  }
+
   render(){
     return (
       <div style={{
