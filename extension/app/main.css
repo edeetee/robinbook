@@ -48,3 +48,7 @@
     padding: 10px;
     padding-left: 40px;
 }
+
+a > div {
+    color: #07C !important;
+}

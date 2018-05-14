@@ -17,12 +17,11 @@ This data will be stored in your local browser storage and downloaded as a comma
 You may continue with the transfer process once your friends.csv has been generated.<br>
 </p>
 </div>`;
-let htmlElm = null;
 
 (async () => {
     if(0 < friendsPanel.length && ! await getOne("friends")){
         console.log('testsss')
-        htmlElm = $(document.body).append(html)
+        $(document.body).append(html)
         scrollUpdate();
     }
 })();
@@ -75,7 +74,9 @@ function scrollUpdate() {
         link.click();
         link.remove();
 
-        htmlElm.remove();
+        $('.robinbook-information').remove()
+
+        window.scrollTo(0,0)
     }
 }
 

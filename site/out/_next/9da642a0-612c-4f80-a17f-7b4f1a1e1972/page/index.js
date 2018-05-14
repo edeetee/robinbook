@@ -63,43 +63,43 @@ var Index = function (_Component) {
             alignItems: 'start',
             margin: '50px 40px',
             maxWidth: 900
-          }, className: 'jsx-3517220454'
+          }, className: 'jsx-1155966384'
         },
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
-          styleId: '3517220454',
-          css: ['span.jsx-3517220454{font-weight:bold;background-color:black;color:white;padding:0.15em;}', 'ol.jsx-3517220454{list-style-type:none;counter-reset:list-counter;padding-left:20px;}', 'ol.jsx-3517220454>li.jsx-3517220454{font-size:20px;margin-top:30px;vertical-align:text-bottom;}', 'ol.jsx-3517220454>li.jsx-3517220454:before{background:black;color:white;font-size:40px;padding:0 3px;margin-right:20px;content:counter(list-counter);counter-increment:list-counter;}', 'p.jsx-3517220454{margin:10px 10px;}', 'ul.jsx-3517220454{margin-top:20px;padding-left:30px;}', 'ul.jsx-3517220454>li.jsx-3517220454{margin-top:10px;margin-left:30px;list-style-type:none;}']
+          styleId: '1155966384',
+          css: ['span.jsx-1155966384{font-weight:bold;background-color:black;color:white;padding:0.15em;}', 'ol.jsx-1155966384{list-style-type:none;counter-reset:list-counter;padding-left:20px;}', 'ol.jsx-1155966384>li.jsx-1155966384{font-size:20px;margin-top:30px;vertical-align:text-bottom;}', 'ol.jsx-1155966384>li.jsx-1155966384:before{background:black;color:white;font-size:40px;padding:0 3px;margin-right:20px;content:counter(list-counter);counter-increment:list-counter;}', 'p.jsx-1155966384{margin:10px 10px;}', 'ul.jsx-1155966384{margin-top:20px;padding-left:30px;}', 'ul.jsx-1155966384>li.jsx-1155966384{margin-top:10px;margin-left:30px;list-style-type:none;}', 'a.jsx-1155966384{color:#07C;}']
         }),
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
           'span',
-          { style: { fontSize: 90 }, className: 'jsx-3517220454'
+          { style: { fontSize: 90 }, className: 'jsx-1155966384'
           },
           'Robinbook'
         ),
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
           'span',
-          { style: { fontSize: 40, marginBottom: 30 }, className: 'jsx-3517220454'
+          { style: { fontSize: 40, marginBottom: 30 }, className: 'jsx-1155966384'
           },
           'Take back ',
           __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             'i',
             {
-              className: 'jsx-3517220454'
+              className: 'jsx-1155966384'
             },
             'your'
           ),
           ' data'
         ),
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('div', { style: { height: 50 }, className: 'jsx-3517220454'
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('div', { style: { height: 50 }, className: 'jsx-1155966384'
         }),
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
           'p',
           {
-            className: 'jsx-3517220454'
+            className: 'jsx-1155966384'
           },
           'On facebook, your data is their profit. You have no control over what happens to that data and, if ',
           __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             'a',
-            { href: 'https://en.wikipedia.org/wiki/Cambridge_Analytica', className: 'jsx-3517220454'
+            { href: 'https://en.wikipedia.org/wiki/Cambridge_Analytica', className: 'jsx-1155966384'
             },
             'what we know so far'
           ),
@@ -108,46 +108,46 @@ var Index = function (_Component) {
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
           'p',
           {
-            className: 'jsx-3517220454'
+            className: 'jsx-1155966384'
           },
           'Robinbook will walk you through downloading the data facebook will let you download (your facebook archive) and will also allow you to download your valuable metadata facebook wants to keep behind it\'s walled garden.'
         ),
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
           'p',
           {
-            className: 'jsx-3517220454'
+            className: 'jsx-1155966384'
           },
           'Using this data, you can retain the information that you have put into facebook. If we give people ownership of their data, it allows them to choose who to trust with it. Then, we have the power to pick platforms that respect our values both through their actions and implementations.'
         ),
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
           'ol',
           {
-            className: 'jsx-3517220454'
+            className: 'jsx-1155966384'
           },
           __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             'li',
             {
-              className: 'jsx-3517220454'
+              className: 'jsx-1155966384'
             },
             'Download your facebook archive and metadata using Robinbook'
           ),
           __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             'li',
             {
-              className: 'jsx-3517220454'
+              className: 'jsx-1155966384'
             },
             'Browse your backed up data using Robinbook to compile the data together'
           ),
           __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             'li',
             {
-              className: 'jsx-3517220454'
+              className: 'jsx-1155966384'
             },
             'Delete private messages, posts, friends and pages you don\'t want facebook to ',
             __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
               'i',
               {
-                className: 'jsx-3517220454'
+                className: 'jsx-1155966384'
               },
               'own'
             )
@@ -155,23 +155,130 @@ var Index = function (_Component) {
           __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             'ul',
             {
-              className: 'jsx-3517220454'
+              className: 'jsx-1155966384'
             },
             __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
               'li',
               {
-                className: 'jsx-3517220454'
+                className: 'jsx-1155966384'
               },
               'Or delete all of your messages'
             ),
             __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
               'li',
               {
-                className: 'jsx-3517220454'
+                className: 'jsx-1155966384'
               },
               'Or delete your entire account'
             )
           )
+        ),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'h3',
+          {
+            className: 'jsx-1155966384'
+          },
+          'More information below...'
+        ),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('div', { style: { height: 100 }, className: 'jsx-1155966384'
+        }),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'h1',
+          {
+            className: 'jsx-1155966384'
+          },
+          'What now?'
+        ),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'p',
+          {
+            className: 'jsx-1155966384'
+          },
+          'Put your data to use! Upload it to a service that shares your values.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('div', { style: { height: 20 }, className: 'jsx-1155966384'
+        }),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'h2',
+          {
+            className: 'jsx-1155966384'
+          },
+          'Use a social network that uses independent servers'
+        ),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'p',
+          {
+            className: 'jsx-1155966384'
+          },
+          'These systems allow users to host their own servers and identities, so that you have full control over your data as it can be restricted to your machine.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'a',
+          { href: 'https://mastodon.social', className: 'jsx-1155966384'
+          },
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+            'h3',
+            {
+              className: 'jsx-1155966384'
+            },
+            'Mastodon - Twitter Clone'
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'a',
+          { href: 'https://diasporafoundation.org/', className: 'jsx-1155966384'
+          },
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+            'h3',
+            {
+              className: 'jsx-1155966384'
+            },
+            'Diasporia* - Facebook Clone'
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('div', { style: { height: 30 }, className: 'jsx-1155966384'
+        }),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'h2',
+          {
+            className: 'jsx-1155966384'
+          },
+          'Distributed computing'
+        ),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'p',
+          {
+            className: 'jsx-1155966384'
+          },
+          'These are full ecosystems allowing current browsers to connect to decentralized networks.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'a',
+          { href: 'https://blockstack.org/', className: 'jsx-1155966384'
+          },
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+            'h3',
+            {
+              className: 'jsx-1155966384'
+            },
+            'Blockstack - personally controlled data storage and identity'
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('div', { style: { height: 30 }, className: 'jsx-1155966384'
+        }),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'h2',
+          {
+            className: 'jsx-1155966384'
+          },
+          'What do we need?'
+        ),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'p',
+          {
+            className: 'jsx-1155966384'
+          },
+          'More people interested and involved!'
         )
       );
     }

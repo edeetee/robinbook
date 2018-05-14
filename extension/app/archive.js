@@ -26,10 +26,12 @@ async function applyFriends(){
         })
     } else{
         $("div").each((i, el) => {
-            console.log(el.nodeValue)
+            if(el.children.length !== 0)
+                return
+
             let friend = binarySearch(friends, el.innerText)
             if(friend != null){
-                console.log(friend.user)
+                // console.log(friend.user)
                 $(el).wrap(`<a href=https://www.facebook.com/${friend.user}></a>`)
             }
         })
@@ -41,6 +43,7 @@ applyFriends();
  * @returns {Friend}
 */
 function binarySearch(array, value) {
+    value = String(value)
     var guess,
         min = 0,
         max = array.length - 1;	

@@ -1,9 +1,2 @@
 # Robinbook
-This app allows you to take your facebook identity along with you to a new, secure location.
-
-A few key technologies make this possible:
-
-* Blockstack
-    * Identity ownership
-    * Social identity verification
-* 
+For more information, go to the site, edeetee.github.com/robinbook.

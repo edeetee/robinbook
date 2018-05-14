@@ -7,7 +7,7 @@
     "help": "webextension-toolbox build --help",
     "ff-old": "webextension-toolbox dev firefox",
     "dev": "webextension-toolbox dev -d inline-source-map firefox",
-    "build": "webextension-toolbox build firefox",
+    "build": "nodewebextension-toolbox build firefox",
     "web-ext": "cd dist/firefox && web-ext run"
   },
   "author": "",
