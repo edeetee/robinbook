@@ -22,9 +22,31 @@ export default class Index extends Component{
         alignItems: 'start',
         margin: '50px 40px',
         maxWidth: 900
-      }}>
+      }} id="top">
         <div dangerouslySetInnerHTML={{__html: corner}}></div>
         <style jsx>{`
+
+          #title{
+            font-size: 6rem;
+          }
+
+          #subtitle{
+            font-size: 3rem;
+            margin-bottom: 30;
+          }
+
+          @media (max-width: 600px){
+            #top{
+              font-size: 0.9rem;
+            }
+            #title{
+              font-size: 14vw;
+            }
+            #subtitle{
+              font-size: 6vw;
+            }
+          }
+
           span {
             font-weight: bold;
             background-color: black;
@@ -39,17 +61,18 @@ export default class Index extends Component{
           }
 
           ol > li {
-            font-size: 20px;
+            font-size: 1.3em;
             margin-top: 30px;
-            vertical-align: text-bottom;
+            margin-left: 40px;
           }
 
           ol > li :before {
             background: black;
             color: white;
-            font-size: 40px;
+            font-size: 2.5rem;
             padding: 0 3px;
-            margin-right: 20px;
+            margin-left: -40px;
+            margin-right: 10px;
 
             content: counter(list-counter);
             counter-increment: list-counter;
@@ -76,8 +99,8 @@ export default class Index extends Component{
           
         `}</style>
 
-        <span style={{fontSize: 90}}>Robinbook</span>
-        <span style={{fontSize: 40, marginBottom: 30}}>Take back <i>your</i> data</span>
+        <span id="title">Robinbook</span>
+        <span id="subtitle">Take back <i>your</i> data</span>
         <div style={{height:50}}></div>
 
         <p>
@@ -86,15 +109,13 @@ export default class Index extends Component{
           facebook doesn't always have your best interests at heart.
         </p>
         <p>
-          Robinbook will walk you through downloading the data facebook will let you download (your facebook archive)
-          and will also allow you to download your valuable metadata facebook wants to keep behind it's walled garden.
+          Robinbook explores facebook's data policies by letting you download data they don't let you access, 
+          proving how they use <a href="https://darkpatterns.org/">dark design patterns</a> to make it hard for you to give them up.
         </p>
         <p>
-          Using this data, you can retain the information that you have put into facebook.
-          If we give people ownership of their data, it allows them to choose who to trust with it.
-          Then, we have the power to pick platforms that respect our values both through their actions and implementations.
+          If you don't control your data, then these companies can choose how and where it gets used.
+          By taking control, we gain the power to pick platforms that respect our values both through their actions and implementations.
         </p>
-
         <ol>
           <li>Download your facebook archive and metadata using <a href="https://addons.mozilla.org/en-US/firefox/addon/robinbook-setup/">the Robinbook extension</a></li>
           <li>Browse your backed up data using <a href="https://addons.mozilla.org/en-US/firefox/addon/robinbook-setup/">the Robinbook extension</a> to compile the data together</li>
@@ -104,8 +125,7 @@ export default class Index extends Component{
             <li>Or delete your entire account</li>
           </ul>
         </ol>
-        <h3>More information below...</h3>
-        <div style={{height:100}}></div>
+        <div style={{height:80}}></div>
 
         <h1>What now?</h1>
         <p>Put your data to use! Upload it to a service that shares your values.</p>
@@ -129,12 +149,12 @@ export default class Index extends Component{
         <div style={{height:30}}></div>
 
         <h2>Distributed computing</h2>
-        <p>These are full ecosystems allowing current browsers to connect to decentralized networks.</p>
+        <p>
+          These are full ecosystems allowing current browsers to connect to decentralized networks.
+          They may not be much right now, but these may be the <a href="https://en.wikipedia.org/wiki/Netscape">Netscape</a> equivalent of the future internet.
+        </p>
         <h3><a href="https://blockstack.org/">Blockstack</a> - personally controlled data storage and identity</h3>
-        <div style={{height:30}}></div>
-
-        <h2>What do we need?</h2>
-        <p>More people interested and involved!</p>
+        <h3><a href="https://www.ethereum.org/">Ethereum</a> - apps with rigorous, provable rules and controls</h3>
       </div>
     )
   }

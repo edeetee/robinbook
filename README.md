@@ -5,8 +5,6 @@ This repository holds the files for the robinbook extension as well as the homep
 
 The scripts for building can be found in the package.json of each directory, as per nodejs standards. I have paid care to make sure the code outputs aren't obfuscated, which seems to be the norm for webpack for speed increases, but is important in this use case so that users can personally verify code. On top of that, the developer tools used all support hot reloading, to make change happen automatically inside the browser and allow for a responsive developer environment.
 
----
-
 ## Extension
 This directory holds the source for the robinbook extension.
 
