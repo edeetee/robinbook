@@ -34,3 +34,7 @@ body {
     color: black;
     background-color: white;
 }
+
+p{
+    margin-bottom: 0;
+}

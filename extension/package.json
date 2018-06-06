@@ -2,21 +2,15 @@
   "name": "robinbook-extension",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "help": "webextension-toolbox build --help",
-    "ff-old": "webextension-toolbox dev firefox",
-    "dev": "webextension-toolbox dev -d inline-source-map firefox",
-    "build": "nodewebextension-toolbox build firefox",
-    "web-ext": "cd dist/firefox && web-ext run"
+    "dev": "webextension-toolbox dev firefox",
+    "build": "webextension-toolbox build firefox"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "jquery": "^3.3.1",
-    "webpack": "^4.5.0"
-  },
-  "devDependencies": {
+    "webpack": "^4.5.0",
     "webextension-toolbox": "^1.0.3"
   }
 }
