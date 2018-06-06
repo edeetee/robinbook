@@ -2,13 +2,8 @@ import {getOne} from './lib/storage'
 import Friend from './lib/friend'
 
 const html = `<div class="robinbook-information">
-<h2>Your friends.csv is not available on this computer</h2>
-<ul>
-    <input type="file" id="fileIn" multiple accept="image/*" style="display:none" onchange="handleFiles(this.files)">
-    <li>Click the extension toolbar icon to start</li>
-    <li>Or</li>
-    <li><a href="#" id="loadFile">Upload your backed up friends.csv</a></li>
-</ul>
+<h1>Robinbook</h1>
+<p>Your friends.csv is not yet available on this computer. Click on the toolbar icon to start.</p>
 </div>`
 
 async function applyFriends(){
@@ -31,8 +26,8 @@ async function applyFriends(){
 
             let friend = binarySearch(friends, el.innerText)
             if(friend != null){
-                // console.log(friend.user)
-                $(el).wrap(`<a href=https://www.facebook.com/${friend.user}></a>`)
+                let element = $(el).css("color", "#07C")
+                element.wrap(`<a href=https://www.facebook.com/${friend.user}></a>`)
             }
         })
     }

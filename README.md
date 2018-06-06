@@ -21,8 +21,6 @@ The javascript source can be found in the _app_ subdirectory. I use content scri
 * [webextension-toolbox](https://www.npmjs.com/package/webextension-toolbox)
 * Mozilla Addons for hosting (skipped google chrome as it costs money to upload extension!!!)
 
----
-
 ## Site
 This directory holds the source for the robinbook site.
 
